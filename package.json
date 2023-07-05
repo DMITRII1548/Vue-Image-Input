@@ -1,8 +1,21 @@
 {
-  "name": "vue-image-input",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "vue3-picture-input",
+  "version": "0.1.1",
+  "description": "This is an input for pictures",
+  "homepage": "https://github.com/DMITRII1548/Vue-Image-Input",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue3-picture-input.umd.js",
+  "module": "./dist/vue3-picture-input.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/es.js",
+      "require": "./dist/umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
