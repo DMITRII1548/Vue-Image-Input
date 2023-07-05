@@ -81,8 +81,8 @@ export default {
 | size-96     | 24rem   | 
 
 
-###background
-###params
+### background
+### params
 
 | param       | value   | 
 | ----------- |:-------:| 
@@ -93,8 +93,8 @@ export default {
 | bg-green    | #0fcaof | 
 
 
-###textColor
-###params
+### textColor
+### params
 
 | param       | value   | 
 | ----------- |:-------:| 
@@ -104,8 +104,8 @@ export default {
 | text-green  | #0fca0f | 
 
 
-###border
-###params
+### border
+### params
 
 | param         | value                | 
 | ------------- |:--------------------:| 
