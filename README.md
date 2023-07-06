@@ -2,6 +2,15 @@
 
 This is a simple input for image
 
+## What's new?
+
+1. Added grey color
+
+2. Added prop title
+
+3. Added ability to move a file to input
+
+
 ## Installation 
 
 ```npm i vue3-picture-input ```
@@ -51,6 +60,8 @@ export default {
 
 
 ### size
+Size of your input
+
 ### params
 
 | param       | value   | 
@@ -82,6 +93,8 @@ export default {
 
 
 ### background
+Background color
+
 ### params
 
 | param       | value   | 
@@ -90,10 +103,12 @@ export default {
 | bg-white    | #fff    | 
 | bg-black    | #000    | 
 | bg-red      | red     | 
+| bg-grey     | grey    |
 | bg-green    | #0fcaof | 
 
 
 ### textColor
+Text color
 ### params
 
 | param       | value   | 
@@ -101,10 +116,13 @@ export default {
 | text-black  | #000    | 
 | text-white  | #fff    | 
 | text-red    | red     | 
+| text-grey   | grey    |
 | text-green  | #0fca0f | 
 
 
+
 ### border
+Border params: border-style, border-width, 
 ### params
 
 | param         | value                | 
@@ -118,6 +136,7 @@ export default {
 | border-black  | #000                 |
 | border-white  | #fff                 |
 | border-red    | red                  |
+| border-grey   | grey                 |
 | border-green  | #0fca0f              |
 | border-solid  | border-style: solid  |
 | border-dashed | border-style: dashed |
@@ -125,3 +144,11 @@ export default {
 | border-double | border-style: double |
 
 
+### mimes
+accepted types of files
+
+#### recomended '.png,.jpg'
+
+
+### title 
+This is text at your component 

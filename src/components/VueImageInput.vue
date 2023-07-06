@@ -1,12 +1,11 @@
 <template>
-  <div :class="containerSize + ' container' + ' ' + border">
+  <div :class="containerSize + ' container' + ' ' + border" @drop="handleDrop" @dragover.prevent>
     <template v-if="!imageSrc">
       <input class="input" type="file" v-on:change="onChange" :accept="mimes" multiple>
-      <button @click.prevent="openInput" :class="size + ' ' + background + ' ' + textColor">Drop here</button>
+      <button @click.prevent="openInput" :class="size + ' ' + background + ' ' + textColor">{{ title }}</button>
     </template>
     <template v-if="imageSrc" :class="size">
       <img :src="imageSrc" class="w-full image">
-
       <div @click="deleteFile" class="cancel"></div>
     </template>
   </div>
@@ -17,6 +16,7 @@ export default {
   name: 'VueImageInput',
 
   props: [
+    'title', // Drop here
     'size',
     'background',
     'textColor',
@@ -55,6 +55,12 @@ export default {
       this.imageSrc = ''
       this.file = []
     },
+
+    handleDrop(event) {
+      event.preventDefault()
+      this.file = event.dataTransfer.files[0]
+      this.createImage()
+    }
   },
 
   computed: {
@@ -373,6 +379,10 @@ image {
   background: #0fca0f;
 }
 
+.bg-grey {
+  background: grey;
+}
+
 .text-black {
   color: #000;
 }
@@ -387,6 +397,10 @@ image {
 
 .text-green {
   color: #0fca0f
+}
+
+.text-grey {
+  color: grey;
 }
 
 .border-none {
@@ -429,6 +443,11 @@ image {
   border-color: #0fca0f
 }
 
+.border-grey {
+  border-color: grey;
+  ;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -443,4 +462,5 @@ image {
 
 .border-double {
   border-style: double;
-}</style>
+}
+</style>
