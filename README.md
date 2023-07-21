@@ -4,12 +4,11 @@ This is a simple input for image
 
 ## What's new?
 
-1. Added grey color
+1. Added new background class: bg-none
 
-2. Added prop title
+2. Added blue color
 
-3. Added ability to move a file to input
-
+3. Add new prop imageRounded
 
 ## Installation 
 
@@ -22,11 +21,11 @@ Import package in src/main.js file
 ```javascript
 import { createApp } from 'vue'
 import App from './App.vue'
-import VuePictureInput from 'vue3-picture-input'
+import VueImageInput from 'vue3-picture-input'
 import "vue3-picture-input/dist/style.css"
 
 const app = createApp(App)
-app.use(VuePictureInput)
+app.use(VueImageInput)
 app.mount('#app')
 ```
 
@@ -99,9 +98,11 @@ Background color
 
 | param       | value   | 
 | ----------- |:-------:| 
+| bg-none     | none    | 
 | bg-default  | #dadada | 
 | bg-white    | #fff    | 
 | bg-black    | #000    | 
+| bg-blue     | blue    | 
 | bg-red      | red     | 
 | bg-grey     | grey    |
 | bg-green    | #0fcaof | 
@@ -114,6 +115,7 @@ Text color
 | param       | value   | 
 | ----------- |:-------:| 
 | text-black  | #000    | 
+| text-blue   | blue    | 
 | text-white  | #fff    | 
 | text-red    | red     | 
 | text-grey   | grey    |
@@ -134,6 +136,7 @@ Border params: border-style, border-width,
 | border-4      | border-width: 4px    |
 | border-5      | border-width: 5px    |
 | border-black  | #000                 |
+| border-blue   | blue                 |
 | border-white  | #fff                 |
 | border-red    | red                  |
 | border-grey   | grey                 |
@@ -142,6 +145,32 @@ Border params: border-style, border-width,
 | border-dashed | border-style: dashed |
 | border-dotted | border-style: dotted |
 | border-double | border-style: double |
+
+
+### imageRounded
+thank this prop you can round image 
+
+### params
+
+| param       | value   | 
+| ------------ |:-------:| 
+| rounded-full | 50%     |
+| rounded-2    | 2px     | 
+| rounded-4    | 4px     | 
+| rounded-6    | 6px     | 
+| rounded-8    | 8px     | 
+| rounded-10   | 10px    | 
+| rounded-12   | 12px    | 
+| rounded-14   | 14px    | 
+| rounded-16   | 16px    | 
+| rounded-18   | 18px    | 
+| rounded-20   | 20px    | 
+| rounded-22   | 22px    | 
+| rounded-24   | 24px    | 
+| rounded-26   | 26px    |
+| rounded-28   | 28px    |
+| rounded-30   | 30px    |
+| rounded-32   | 32px    |
 
 
 ### mimes
