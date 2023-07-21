@@ -2,6 +2,9 @@
 
 This is a simple input for image
 
+![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_1.png)
+![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_2.png)
+
 ## What's new?
 
 1. Added new background class: bg-none
