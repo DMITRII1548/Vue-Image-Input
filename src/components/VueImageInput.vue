@@ -5,7 +5,7 @@
       <button @click.prevent="openInput" :class="size + ' ' + background + ' ' + textColor">{{ title }}</button>
     </template>
     <template v-if="imageSrc" :class="size">
-      <img :src="imageSrc" class="w-full image">
+      <img :src="imageSrc" :class="'w-full image ' + imageRounded">
       <div @click="deleteFile" class="cancel"></div>
     </template>
   </div>
@@ -21,6 +21,7 @@ export default {
     'background',
     'textColor',
     'border',
+    'imageRounded',
     'mimes', //'.jpg,.png',
   ],
 
@@ -359,6 +360,10 @@ image {
   width: 100%;
 }
 
+.bg-none {
+  background: none;
+}
+
 .bg-default {
   background: #dadada;
 }
@@ -383,8 +388,16 @@ image {
   background: grey;
 }
 
+.bg-blue {
+  background: blue;
+}
+
 .text-black {
   color: #000;
+}
+
+.text-blue {
+  color: blue;
 }
 
 .text-white {
@@ -431,6 +444,10 @@ image {
   border-color: #000;
 }
 
+.border-blue {
+  border-color: blue;
+}
+
 .border-white {
   border-color: #fff;
 }
@@ -462,5 +479,73 @@ image {
 
 .border-double {
   border-style: double;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.rounded-2 {
+  border-radius: 2px;
+}
+
+.rounded-4 {
+  border-radius: 4px;
+}
+
+.rounded-6 {
+  border-radius: 6px;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.rounded-14 {
+  border-radius: 14px;
+}
+
+.rounded-16 {
+  border-radius: 16px;
+}
+
+.rounded-18 {
+  border-radius: 18px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-22 {
+  border-radius: 22px;
+}
+
+.rounded-24 {
+  border-radius: 24px;
+}
+
+.rounded-26 {
+  border-radius: 26px;
+}
+
+.rounded-28 {
+  border-radius: 28px;
+}
+
+.rounded-30 {
+  border-radius: 30px;
+}
+
+.rounded-32 {
+  border-radius: 32px;
 }
 </style>
