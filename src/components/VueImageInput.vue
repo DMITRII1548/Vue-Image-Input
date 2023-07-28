@@ -2,11 +2,11 @@
   <div :class="containerSize + ' container' + ' ' + border" @drop="handleDrop" @dragover.prevent>
     <template v-if="!imageSrc">
       <input class="input" type="file" v-on:change="onChange" :accept="mimes" multiple>
-      <button @click.prevent="openInput" :class="size + ' ' + background + ' ' + textColor">{{ title }}</button>
+      <button @click.prevent="openInput" :class="size + ' btn ' + background + ' ' + textColor">{{ title }}</button>
     </template>
     <template v-if="imageSrc" :class="size">
       <img :src="imageSrc" :class="'w-full image ' + imageRounded">
-      <div @click="deleteFile" class="cancel"></div>
+      <div @click="deleteFile" :class="'close ' + closeBtn"></div>
     </template>
   </div>
 </template>
@@ -21,8 +21,9 @@ export default {
     'background',
     'textColor',
     'border',
-    'imageRounded',
     'mimes', //'.jpg,.png',
+    'imageRounded',
+    'closeBtn'
   ],
 
   data() {
@@ -107,21 +108,27 @@ button {
   display: none;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 image {
   max-width: 100%;
   max-height: 80%;
 }
 
-.cancel {
+.close {
   cursor: pointer;
   position: relative;
-  padding-right: 24px;
+  padding-right: 5px;
   padding-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
   width: 20px;
 }
 
-.cancel:before,
-.cancel:after {
+.close:before,
+.close:after {
   content: "";
   position: absolute;
   width: 24px;
@@ -129,12 +136,92 @@ image {
   background: red;
 }
 
-.cancel:before {
+.close:before {
   transform: rotate(45deg);
 }
 
-.cancel:after {
+.close:after {
   transform: rotate(-45deg);
+}
+
+.close:hover {
+  opacity: 75%;
+}
+
+.close-black:after, .close-black:before {
+  background: #000;
+}
+
+.close-blue:after, .close-blue:before {
+  background: blue;
+}
+
+.close-white:after, .close-white:before {
+  background: #fff;
+}
+
+.close-red:after, .close-red:before {
+  background: red;
+}
+
+.close-green:after, .close-green:before {
+  background: #0fca0f
+}
+
+.close-grey:after, .close-grey:before {
+  background: grey;
+}
+
+.close-yellow:after, .close-yellow:before {
+  background: yellow;
+}
+
+.close-dark-gray:after, .close-dark-gray:before {
+  background: darkgray;
+}
+
+.close-maroon:after, .close-maroon:before {
+  background: maroon;
+}
+
+.hover-opacity-10:hover {
+  opacity: 10%;
+}
+
+.hover-opacity-20:hover {
+  opacity: 20%;
+}
+
+.hover-opacity-30:hover {
+  opacity: 30%;
+}
+
+.hover-opacity-40:hover {
+  opacity: 40%;
+}
+
+.hover-opacity-50:hover {
+  opacity: 50%;
+}
+
+.hover-opacity-60:hover {
+  opacity: 60%;
+}
+
+.hover-opacity-70:hover {
+  opacity: 70%;
+}
+
+.hover-opacity-80:hover {
+  opacity: 80%;
+}
+
+.hover-opacity-90:hover {
+  opacity: 90%;
+}
+
+.hover-opacity-100:hover {
+  opacity: 100%;
 }
 
 .size-4 {
@@ -388,6 +475,18 @@ image {
   background: grey;
 }
 
+.bg-yellow {
+  background: yellow;
+}
+
+.bg-dark-gray {
+  background: darkgray;
+}
+
+.bg-maroon {
+  background: maroon;
+}
+
 .bg-blue {
   background: blue;
 }
@@ -414,6 +513,18 @@ image {
 
 .text-grey {
   color: grey;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-dark-gray {
+  color: darkgray
+}
+
+.text-maroon {
+  color: maroon;
 }
 
 .border-none {
@@ -462,7 +573,18 @@ image {
 
 .border-grey {
   border-color: grey;
-  ;
+}
+
+.border-yellow {
+  border-color: yellow;
+}
+
+.border-dark-gray {
+  border-color: darkgray;
+}
+
+.border-maroon {
+  border-color: maroon;
 }
 
 .border-solid {
