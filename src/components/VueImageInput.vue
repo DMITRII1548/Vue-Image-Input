@@ -184,6 +184,22 @@ image {
   background: maroon;
 }
 
+.close-aqua:after, .close-aqua:before {
+  background: aqua;
+}
+
+.close-lavender:after, .close-lavender:before {
+  background: lavender;
+}
+
+.close-indigo:after, .close-indigo:before {
+  background: indigo;
+}
+
+.close-fuchsia:after, .close-fuchsia:before {
+  background: fuchsia
+}
+
 .hover-opacity-10:hover {
   opacity: 10%;
 }
@@ -491,6 +507,21 @@ image {
   background: blue;
 }
 
+.bg-aqua {
+  background: aqua;
+}
+
+.bg-lavender {
+  background: lavender;
+}
+.bg-indigo {
+  background: indigo;
+}
+
+.bg-fuchsia {
+  background: fuchsia
+}
+
 .text-black {
   color: #000;
 }
@@ -525,6 +556,22 @@ image {
 
 .text-maroon {
   color: maroon;
+}
+
+.text-aqua {
+  color: aqua;
+}
+
+.text-lavender {
+  color: lavender;
+}
+
+.text-indigo {
+  color: indigo;
+}
+
+.text-fuchsia {
+  color: fuchsia
 }
 
 .border-none {
@@ -585,6 +632,22 @@ image {
 
 .border-maroon {
   border-color: maroon;
+}
+
+.border-aqua {
+  border-color: aqua;
+}
+
+.border-lavender {
+  border-color: lavender;
+}
+
+.border-indigo {
+  border-color: indigo;
+}
+
+.border-fuchsia {
+  border-color: fuchsia
 }
 
 .border-solid {

@@ -5,11 +5,7 @@ This is a simple input for image
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_1.png)
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_2.png)
 ## What's new?
-
-1. Added new prop closeBtn.
-2.  changed design close btn.
-
-3. added new colors: ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`, ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`, ![maroon](https://placehold.co/15x15/maroon/maroon.png) `maroon`.
+1. added new colors: ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`, ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`, ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`, ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`.
 
 ## Installation 
 
@@ -109,8 +105,11 @@ Background color
 | bg-green      | ![#0FCA0F](https://placehold.co/15x15/0FCA0F/0FCA0F.png) `#0FCA0F`         | 
 | bg-yellow     | ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`           |
 | bg-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`   |
-| bg-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`           |
-
+| bg-maroon     | ![maroon](https://placehold.co/15x15/maroon/maroon.png) `maroon`           |
+| bg-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                   |
+| bg-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`           |
+| bg-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`   |
+| bg-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`       |
 
 ### textColor
 Text color
@@ -127,7 +126,10 @@ Text color
 | text-yellow     | ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`         |
 | text-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray` |
 | text-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`         |
-
+| text-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                   |
+| text-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`           |
+| text-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`   |
+| text-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`       |
 
 
 ### border
@@ -148,9 +150,13 @@ Border params: border-style, border-width,
 | border-red        | ![red](https://placehold.co/15x15/red/red.png) `red`                         |
 | border-grey       | ![grey](https://placehold.co/15x15/grey/grey.png) `grey`                     |
 | border-green      | ![#0FCA0F](https://placehold.co/15x15/0FCA0F/0FCA0F.png) `#0FCA0F`           |
-| border-yellow     | ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`         |
-| border-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray` |
-| border-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`         |
+| border-yellow     | ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`             |
+| border-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`     |
+| border-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`             |
+| border-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                     |
+| border-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`             |
+| border-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`     |
+| border-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`         |
 | border-solid      | border-style: solid                                                          |
 | border-dashed     | border-style: dashed                                                         |
 | border-dotted     | border-style: dotted                                                         |
@@ -213,6 +219,10 @@ When :hover
 | close-yellow     | ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`           |
 | close-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`   |
 | close-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`           |
+| close-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                   |
+| close-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`           |
+| close-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`   |
+| close-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`       |
 
 ### mimes
 accepted types of files
