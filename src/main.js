@@ -1,4 +1,3 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import VueImageInput from './components/VueImageInput.vue'
 
-createApp(App).mount('#app')
+export { VueImageInput }
