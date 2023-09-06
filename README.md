@@ -5,7 +5,15 @@ This is a simple input for image
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_1.png)
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_2.png)
 ## What's new?
-1. added new colors: ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`, ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`, ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`, ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`.
+1. Added new colors: ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`, ![orange](https://placehold.co/15x15/orange/orange.png) `orange`, ![silver](https://placehold.co/15x15/silver/silver.png) `silver`.
+
+2. Deleted size values: 'size-80', 'size-84', 'size-88', 'size-92', 'size-96'.
+
+3. New building library.
+
+4. New way of importing component (You can you library localy in your components now).
+
+5. Added new prop fontSize.
 
 ## Installation 
 
@@ -13,29 +21,17 @@ This is a simple input for image
 
 ## Getting starting 
 
-Import package in src/main.js file
-
-```javascript
-import { createApp } from 'vue'
-import App from './App.vue'
-import VueImageInput from 'vue3-picture-input'
-import "vue3-picture-input/dist/style.css"
-
-const app = createApp(App)
-app.use(VueImageInput)
-app.mount('#app')
-```
-
 ## Usage
-You get your first program with our component
+Import the package into your component. You will get your first program with this component.
 ```html
 // src/App.vue
 <template>
-  <VueImageInput size="size-40" mimes=".png,.jpg" ref="imageinput" />
-  <button @click="showFile">Show</button>
+  <VueImageInput size="size-40" mimes=".png,.jpg" ref="imageinput" imageRounded="rounded-40"/>
 </template>
 
 <script>
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
 
 export default {
   name: 'App',
@@ -44,6 +40,10 @@ export default {
     showFile() {
       console.log(this.$refs.imageinput.file)
     },
+  },
+
+  components: {
+    VueImageInput,
   },
 }
 </script>
@@ -81,11 +81,6 @@ Size of your input
 | size-68     | 17rem   | 
 | size-72     | 18rem   | 
 | size-76     | 19rem   | 
-| size-80     | 20rem   | 
-| size-84     | 21rem   | 
-| size-88     | 22rem   | 
-| size-92     | 23rem   | 
-| size-96     | 24rem   | 
 
 
 ### background
@@ -107,9 +102,12 @@ Background color
 | bg-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`   |
 | bg-maroon     | ![maroon](https://placehold.co/15x15/maroon/maroon.png) `maroon`           |
 | bg-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                   |
-| bg-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`           |
+| bg-indigo     | ![indigo](https://placehold.co/15x15/4B0082/4B0082.png) `indigo`           |
 | bg-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`   |
 | bg-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`       |
+| bg-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`               |
+| bg-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`           |
+| bg-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`           |
 
 ### textColor
 Text color
@@ -126,11 +124,13 @@ Text color
 | text-yellow     | ![yellow](https://placehold.co/15x15/yellow/yellow.png) `yellow`         |
 | text-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray` |
 | text-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`         |
-| text-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                   |
-| text-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`           |
-| text-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`   |
-| text-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`       |
-
+| text-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                 |
+| text-indigo     | ![indigo](https://placehold.co/15x15/4B0082/4B0082.png) `indigo`         |
+| text-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender` |
+| text-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`     |
+| text-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`             |
+| text-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`         |
+| text-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`         |
 
 ### border
 Border params: border-style, border-width, 
@@ -154,9 +154,12 @@ Border params: border-style, border-width,
 | border-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`     |
 | border-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`             |
 | border-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                     |
-| border-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`             |
+| border-indigo     | ![indigo](https://placehold.co/15x15/4B0082/4B0082.png) `indigo`             |
 | border-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`     |
 | border-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`         |
+| border-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`                 |
+| border-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`             |
+| border-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`             |
 | border-solid      | border-style: solid                                                          |
 | border-dashed     | border-style: dashed                                                         |
 | border-dotted     | border-style: dotted                                                         |
@@ -220,9 +223,12 @@ When :hover
 | close-dark-gray  | ![darkgray](https://placehold.co/15x15/darkgray/darkgray.png) `darkgray`   |
 | close-maroon     | ![yellow](https://placehold.co/15x15/maroon/maroon.png) `maroon`           |
 | close-aqua       | ![aqua](https://placehold.co/15x15/aqua/aqua.png) `aqua`                   |
-| close-indigo     | ![indigo](https://placehold.co/15x15/indigo/indigo.png) `indigo`           |
+| close-indigo     | ![indigo](https://placehold.co/15x15/4B0082/4B0082.png) `indigo`           |
 | close-lavender   | ![lavender](https://placehold.co/15x15/lavender/lavender.png) `lavender`   |
 | close-fuchsia    | ![fuchsia](https://placehold.co/15x15/fuchsia/fuchsia.png) `fuchsia`       |
+| close-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`               |
+| close-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`           |
+| close-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`           |
 
 ### mimes
 accepted types of files
@@ -232,3 +238,69 @@ accepted types of files
 
 ### title 
 This is text at your component 
+
+### fontSize
+font size of your title 
+
+### params 
+
+| param         | value   | 
+| ------------- |:-------:| 
+| text-6        | 6px     | 
+| text-8        | 8px     | 
+| text-10       | 10px    | 
+| text-12       | 12px    | 
+| text-14       | 14px    | 
+| text-16       | 16px    | 
+| text-18       | 18px    | 
+| text-20       | 20px    | 
+| text-22       | 22px    | 
+| text-24       | 24px    | 
+| text-26       | 26px    | 
+| text-28       | 28px    | 
+| text-30       | 30px    | 
+| text-32       | 32px    | 
+| text-34       | 34px    | 
+| text-36       | 36px    | 
+| text-38       | 38px    | 
+| text-40       | 40px    | 
+| text-42       | 42px    | 
+| text-44       | 44px    | 
+| text-46       | 46px    | 
+| text-48       | 48px    | 
+| text-50       | 50px    | 
+| text-52       | 52px    | 
+| text-54       | 54px    | 
+| text-56       | 56px    | 
+| text-58       | 58px    | 
+| text-60       | 60px    | 
+| text-62       | 62px    | 
+| text-64       | 64px    | 
+
+
+## Customize styles 
+
+If you want customize styles or add your own styles.
+
+You need to make next: 
+
+1. Delete styles of component. 
+```js
+// import "vue3-picture-input-test/style.css"
+```
+
+2. Add your own slyles.
+```js 
+import 'url of your styles'
+```
+
+Or you can write styles in your style tag in your component.
+```html 
+<style scoped>
+  /* Example styles */
+
+  .text-navy {
+    color: #000080;	
+  }
+</style>
+```

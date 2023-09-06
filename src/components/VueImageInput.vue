@@ -2,7 +2,7 @@
   <div :class="containerSize + ' container' + ' ' + border" @drop="handleDrop" @dragover.prevent>
     <template v-if="!imageSrc">
       <input class="input" type="file" v-on:change="onChange" :accept="mimes" multiple>
-      <button @click.prevent="openInput" :class="size + ' btn ' + background + ' ' + textColor">{{ title }}</button>
+      <button @click.prevent="openInput" :class="size + ' btn ' + background + ' ' + textColor + ' ' + fontSize">{{ title }}</button>
     </template>
     <template v-if="imageSrc" :class="size">
       <img :src="imageSrc" :class="'w-full image ' + imageRounded">
@@ -17,6 +17,7 @@ export default {
 
   props: [
     'title', // Drop here
+    'fontSize',
     'size',
     'background',
     'textColor',
@@ -131,6 +132,8 @@ image {
 .close:after {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
   width: 24px;
   height: 4px;
   background: red;
@@ -198,6 +201,18 @@ image {
 
 .close-fuchsia:after, .close-fuchsia:before {
   background: fuchsia
+}
+
+.close-khaki:after, .close-khaki:before {
+  background: khaki;
+}
+
+.close-orange:after, .close-orange:before {
+  background: orange;
+}
+
+.close-silver:after, .close-silver:before {
+  background: silver;
 }
 
 .hover-opacity-10:hover {
@@ -335,31 +350,6 @@ image {
 .size-76 {
   width: calc(19rem + 20px);
   height: 19rem;
-}
-
-.size-80 {
-  width: calc(20rem + 20px);
-  height: 20rem;
-}
-
-.size-84 {
-  width: calc(21rem + 20px);
-  height: 21rem;
-}
-
-.size-88 {
-  width: calc(22rem + 20px);
-  height: 22rem;
-}
-
-.size-92 {
-  width: calc(23rem + 20px);
-  height: 23rem;
-}
-
-.size-96 {
-  width: calc(24rem + 20px);
-  height: 24rem;
 }
 
 .w-4 {
@@ -522,6 +512,18 @@ image {
   background: fuchsia
 }
 
+.bg-khaki {
+  background: khaki;
+}
+
+.bg-orange {
+  background: orange;
+}
+
+.bg-silver {
+  background: silver;
+}
+
 .text-black {
   color: #000;
 }
@@ -572,6 +574,17 @@ image {
 
 .text-fuchsia {
   color: fuchsia
+}
+
+.text-khaki {
+  color: khaki;
+}
+
+.text-orange {
+  color: orange;
+}
+.text-silver {
+  color: silver;
 }
 
 .border-none {
@@ -648,6 +661,18 @@ image {
 
 .border-fuchsia {
   border-color: fuchsia
+}
+
+.border-khaki {
+  border-color: khaki;
+}
+
+.border-orange {
+  border-color: orange;
+}
+
+.bordre-silver {
+  border-color: silver;
 }
 
 .border-solid {
@@ -732,5 +757,125 @@ image {
 
 .rounded-32 {
   border-radius: 32px;
+}
+
+.text-6 {
+  font-size: 6px
+}
+
+.text-8 {
+  font-size: 8px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-22 {
+  font-size: 22px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-26 {
+  font-size: 26px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.text-30 {
+  font-size: 30px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.text-34 {
+  font-size: 34px;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+
+.text-38 {
+  font-size: 38px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-42 {
+  font-size: 42px;
+}
+
+.text-44 {
+  font-size: 44px;
+}
+
+.text-46 {
+  font-size: 46px;
+}
+
+.text-48 {
+  font-size: 48px;
+}
+
+.text-50 {
+  font-size: 50px;
+}
+
+.text-52 {
+  font-size: 52px;
+}
+
+.text-54 {
+  font-size: 54px;
+}
+
+.text-56 {
+  font-size: 56px;
+}
+
+.text-58 {
+  font-size: 58px;
+}
+
+.text-60 {
+  font-size: 60px;
+}
+
+.text-62 {
+  font-size: 62px;
+}
+
+.text-64 {
+  font-size: 64px;
 }
 </style>
