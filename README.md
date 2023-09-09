@@ -1,4 +1,4 @@
-# Vue3-picture-inut
+# Vue3-picture-input
 
 This is a simple input for image
 
