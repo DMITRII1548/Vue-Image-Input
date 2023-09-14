@@ -2,7 +2,7 @@
   <div :class="containerSize + ' container' + ' ' + border" @drop="handleDrop" @dragover.prevent>
     <template v-if="!imageSrc">
       <input class="input" type="file" v-on:change="onChange" :accept="mimes" multiple>
-      <button @click.prevent="openInput" :class="size + ' btn ' + background + ' ' + textColor + ' ' + fontSize">{{ title }}</button>
+      <button @click.prevent="openInput" :class="size + ' btn ' + background + ' ' + textColor + ' ' + fontSize + ' ' + bgRounded">{{ title }}</button>
     </template>
     <template v-if="imageSrc" :class="size">
       <img :src="imageSrc" :class="'w-full image ' + imageRounded">
@@ -24,7 +24,8 @@ export default {
     'border',
     'mimes', //'.jpg,.png',
     'imageRounded',
-    'closeBtn'
+    'closeBtn',
+    'bgRounded'
   ],
 
   data() {
@@ -213,6 +214,20 @@ image {
 
 .close-silver:after, .close-silver:before {
   background: silver;
+}
+
+.close-navy:after, .close-navy:before {
+  background: navy;
+}
+.close-olive:after, .close-olive:before {
+  background: olive;
+}
+.close-purple:after, .close-purple:before {
+  background: purple;
+}
+
+.close-teal:after, .close-teal:before {
+  background: teal;
 }
 
 .hover-opacity-10:hover {
@@ -520,6 +535,20 @@ image {
   background: orange;
 }
 
+.bg-navy {
+  background: navy;
+}
+.bg-olive {
+  background: olive;
+}
+.bg-purple {
+  background: purple;
+}
+
+.bg-teal {
+  background: teal;
+}
+
 .bg-silver {
   background: silver;
 }
@@ -585,6 +614,20 @@ image {
 }
 .text-silver {
   color: silver;
+}
+
+.text-navy {
+  color: navy;
+}
+.text-olive {
+  color: olive;
+}
+.text-purple {
+  color: purple;
+}
+
+.text-teal {
+  color: teal;
 }
 
 .border-none {
@@ -673,6 +716,20 @@ image {
 
 .bordre-silver {
   border-color: silver;
+}
+
+.border-navy {
+  border-color: navy;
+}
+.border-olive {
+  border-color: olive;
+}
+.border-purple {
+  border-color: purple;
+}
+
+.border-teal {
+  border-color: teal;
 }
 
 .border-solid {

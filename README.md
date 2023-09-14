@@ -5,15 +5,9 @@ This is a simple input for image
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_1.png)
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_2.png)
 ## What's new?
-1. Added new colors: ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`, ![orange](https://placehold.co/15x15/orange/orange.png) `orange`, ![silver](https://placehold.co/15x15/silver/silver.png) `silver`.
+1. Added new colors: ![navy](https://placehold.co/15x15/navy/navy.png) `navy`, ![olive](https://placehold.co/15x15/olive/olive.png) `olive`, ![purple](https://placehold.co/15x15/purple/purple.png) `purple`, ![teal](https://placehold.co/15x15/teal/teal.png) `teal`.
 
-2. Deleted size values: 'size-80', 'size-84', 'size-88', 'size-92', 'size-96'.
-
-3. New building library.
-
-4. New way of importing component (You can you library localy in your components now).
-
-5. Added new prop fontSize.
+2. Added new property bgRounded.
 
 ## Installation 
 
@@ -108,6 +102,10 @@ Background color
 | bg-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`               |
 | bg-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`           |
 | bg-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`           |
+| bg-navy       | ![navy](https://placehold.co/15x15/navy/navy.png) `navy`                   |
+| bg-olive      | ![olive](https://placehold.co/15x15/olive/olive.png) `olive`               |
+| bg-purple     | ![purple](https://placehold.co/15x15/purple/purple.png) `purple`           |
+| bg-teal       | ![teal](https://placehold.co/15x15/teal/teal.png) `teal`                   |
 
 ### textColor
 Text color
@@ -131,6 +129,10 @@ Text color
 | text-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`             |
 | text-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`         |
 | text-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`         |
+| text-navy       | ![navy](https://placehold.co/15x15/navy/navy.png) `navy`                 |
+| text-olive      | ![olive](https://placehold.co/15x15/olive/olive.png) `olive`             |
+| text-purple     | ![purple](https://placehold.co/15x15/purple/purple.png) `purple`         |
+| text-teal       | ![teal](https://placehold.co/15x15/teal/teal.png) `teal`                 |
 
 ### border
 Border params: border-style, border-width, 
@@ -160,11 +162,39 @@ Border params: border-style, border-width,
 | border-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`                 |
 | border-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`             |
 | border-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`             |
+| border-navy       | ![navy](https://placehold.co/15x15/navy/navy.png) `navy`                     |
+| border-olive      | ![olive](https://placehold.co/15x15/olive/olive.png) `olive`                 |
+| border-purple     | ![purple](https://placehold.co/15x15/purple/purple.png) `purple`             |
+| border-teal       | ![teal](https://placehold.co/15x15/teal/teal.png) `teal`                     |
 | border-solid      | border-style: solid                                                          |
 | border-dashed     | border-style: dashed                                                         |
 | border-dotted     | border-style: dotted                                                         |
 | border-double     | border-style: double                                                         |
 
+### bgRounded
+Round background of this component
+
+### params
+
+| param        | value   | 
+| ------------ |:-------:| 
+| rounded-full | 50%     |
+| rounded-2    | 2px     | 
+| rounded-4    | 4px     | 
+| rounded-6    | 6px     | 
+| rounded-8    | 8px     | 
+| rounded-10   | 10px    | 
+| rounded-12   | 12px    | 
+| rounded-14   | 14px    | 
+| rounded-16   | 16px    | 
+| rounded-18   | 18px    | 
+| rounded-20   | 20px    | 
+| rounded-22   | 22px    | 
+| rounded-24   | 24px    | 
+| rounded-26   | 26px    |
+| rounded-28   | 28px    |
+| rounded-30   | 30px    |
+| rounded-32   | 32px    |
 
 ### imageRounded
 thank this prop you can round image 
@@ -229,6 +259,10 @@ When :hover
 | close-khaki      | ![khaki](https://placehold.co/15x15/khaki/khaki.png) `khaki`               |
 | close-orange     | ![orange](https://placehold.co/15x15/orange/orange.png) `orange`           |
 | close-silver     | ![silver](https://placehold.co/15x15/silver/silver.png) `silver`           |
+| close-navy       | ![navy](https://placehold.co/15x15/navy/navy.png) `navy`                   |
+| close-olive      | ![olive](https://placehold.co/15x15/olive/olive.png) `olive`               |
+| close-purple     | ![purple](https://placehold.co/15x15/purple/purple.png) `purple`           |
+| close-teal       | ![teal](https://placehold.co/15x15/teal/teal.png) `teal`                   |
 
 ### mimes
 accepted types of files
