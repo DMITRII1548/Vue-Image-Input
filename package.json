@@ -1,8 +1,12 @@
 {
   "name": "vue3-picture-input",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "description": "This is an input for pictures",
-  "homepage": "https://github.com/DMITRII1548/Vue-Image-Input",
+  "homepage": "http://vue3pictureinput.sytes.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DMITRII1548/Vue-Image-Input"
+  },
   "license": "MIT",
   "private": false,
   "keywords": [
