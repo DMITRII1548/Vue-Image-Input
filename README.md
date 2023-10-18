@@ -7,6 +7,10 @@ This is a simple input for image
 
 ## [WebSite](http://vue3pictureinput.sytes.net)
 
+## We need your ideas for new updates
+If you any idea for update.
+Please, click [here](http://vue3pictureinput.sytes.net/ideas/create) and fill in this form.
+
 ## What's new?
 1. Added new colors: ![slateblue](https://placehold.co/15x15/slateblue/slateblue.png) `slateblue`, ![magenta](https://placehold.co/15x15/magenta/magenta.png) `magenta`, ![snow](https://placehold.co/15x15/snow/snow.png) `snow`, ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png) `sandybrown`, , ![violet](https://placehold.co/15x15/violet/violet.png) `violet`.
 
@@ -115,6 +119,7 @@ Background color
 | bg-sandybrown | ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png)`sandybrown`|
 | bg-violet     | ![violet](https://placehold.co/15x15/violet/violet.png)`violet`                |
 
+
 ### textColor
 Text color
 ### params
@@ -146,6 +151,8 @@ Text color
 | text-snow       | ![snow](https://placehold.co/15x15/snow/snow.png)`snow`                        |
 | text-sandybrown | ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png)`sandybrown`|
 | text-violet     | ![violet](https://placehold.co/15x15/violet/violet.png)`violet`                |
+
+
 
 ### border
 Border params: border-style, border-width, 
