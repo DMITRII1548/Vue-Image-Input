@@ -1120,8 +1120,8 @@ Or you can write styles in your style tag in your component.
 <style scoped>
   /* Example styles */
 
-  .text-navy {
-    color: #000080;	
+  .text-some-color {
+    color: #10f19b;	
   }
 </style>
 ```
