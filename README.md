@@ -12,7 +12,7 @@ If you any idea for update.
 Please, click [here](http://vue3pictureinput.sytes.net/ideas/create) and fill in this form.
 
 ## What's new?
-1. Added new colors: ![slateblue](https://placehold.co/15x15/slateblue/slateblue.png) `slateblue`, ![magenta](https://placehold.co/15x15/magenta/magenta.png) `magenta`, ![snow](https://placehold.co/15x15/snow/snow.png) `snow`, ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png) `sandybrown`, , ![violet](https://placehold.co/15x15/violet/violet.png) `violet`.
+1. Added new colors: ![thistle](https://placehold.co/15x15/thistle/thistle.png) `thistle`, ![sienna](https://placehold.co/15x15/sienna/sienna.png) `sienna`, ![slategray](https://placehold.co/15x15/slategray/slategray.png) `slategray`.
 
 2. Added a new property padding.
 
@@ -118,7 +118,9 @@ Background color
 | bg-snow       | ![snow](https://placehold.co/15x15/snow/snow.png)`snow`                        |
 | bg-sandybrown | ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png)`sandybrown`|
 | bg-violet     | ![violet](https://placehold.co/15x15/violet/violet.png)`violet`                |
-
+| bg-thistle    | ![thistle](https://placehold.co/15x15/thistle/thistle.png)`thistle`            |
+| bg-sienna     | ![sienna](https://placehold.co/15x15/sienna/sienna.png)`sienna`                |
+| bg-slategray  | ![slategray](https://placehold.co/15x15/slategray/slategray.png)`slategray`    |
 
 ### textColor
 Text color
@@ -151,8 +153,9 @@ Text color
 | text-snow       | ![snow](https://placehold.co/15x15/snow/snow.png)`snow`                        |
 | text-sandybrown | ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png)`sandybrown`|
 | text-violet     | ![violet](https://placehold.co/15x15/violet/violet.png)`violet`                |
-
-
+| text-thistle    | ![thistle](https://placehold.co/15x15/thistle/thistle.png)`thistle`            |
+| text-sienna     | ![sienna](https://placehold.co/15x15/sienna/sienna.png)`sienna`                |
+| text-slategray     | ![slategray](https://placehold.co/15x15/slategray/slategray.png)`slategray`                |
 
 ### border
 Border params: border-style, border-width, 
@@ -191,6 +194,9 @@ Border params: border-style, border-width,
 | border-snow       | ![snow](https://placehold.co/15x15/snow/snow.png)`snow`                        |
 | border-sandybrown | ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png)`sandybrown`|
 | border-violet     | ![violet](https://placehold.co/15x15/violet/violet.png)`violet`                | 
+| border-thistle    | ![thistle](https://placehold.co/15x15/thistle/thistle.png)`thistle`            |
+| border-sienna     | ![sienna](https://placehold.co/15x15/sienna/sienna.png)`sienna`                |
+| border-slategray  | ![slategray](https://placehold.co/15x15/slategray/slategray.png)`slategray`    | 
 | border-solid      | border-style: solid                                                            |
 | border-dashed     | border-style: dashed                                                           |
 | border-dotted     | border-style: dotted                                                           |
@@ -293,6 +299,9 @@ When :hover
 | close-snow       | ![snow](https://placehold.co/15x15/snow/snow.png)`snow`                        |
 | close-sandybrown | ![sandybrown](https://placehold.co/15x15/sandybrown/sandybrown.png)`sandybrown`|
 | close-violet     | ![violet](https://placehold.co/15x15/violet/violet.png)`violet`                | 
+| close-thistle    | ![thistle](https://placehold.co/15x15/thistle/thistle.png)`thistle`            |
+| close-sienna     | ![sienna](https://placehold.co/15x15/sienna/sienna.png)`sienna`                |
+| close-slategray  | ![slategray](https://placehold.co/15x15/slategray/slategray.png)`slategray`    | 
 
 ### mimes
 accepted types of files
@@ -1111,8 +1120,8 @@ Or you can write styles in your style tag in your component.
 <style scoped>
   /* Example styles */
 
-  .text-navy {
-    color: #000080;	
+  .text-some-color {
+    color: #10f19b;	
   }
 </style>
 ```
