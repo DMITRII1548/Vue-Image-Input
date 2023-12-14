@@ -1,12 +1,12 @@
 <template>
-  <div :class="containerSize + ' container' + ' ' + border + ' ' + padding" @drop="handleDrop" @dragover.prevent>
+  <div :class="`${containerSize} container ${border} ${padding}`" @drop="handleDrop" @dragover.prevent>
     <template v-if="!imageSrc">
       <input class="input" type="file" v-on:change="onChange" :accept="mimes" multiple>
-      <button @click.prevent="openInput" :class="size + ' btn ' + background + ' ' + textColor + ' ' + fontSize + ' ' + bgRounded">{{ title }}</button>
+      <button @click.prevent="openInput" :class="`${size} btn ${background} ${textColor} ${fontSize} ${bgRounded}`">{{ title }}</button>
     </template>
     <template v-if="imageSrc" :class="size">
-      <img :src="imageSrc" :class="'w-full image ' + imageRounded">
-      <div @click="deleteFile" :class="'close ' + closeBtn"></div>
+      <img :src="imageSrc" :class="`w-full image ${imageRounded}`">
+      <div @click="deleteFile" :class="`close ${closeBtn}`"></div>
     </template>
   </div>
 </template>
