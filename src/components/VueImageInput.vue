@@ -15,19 +15,19 @@
 export default {
   name: 'VueImageInput',
 
-  props: [
-    'title', // Drop here
-    'fontSize',
-    'size',
-    'background',
-    'textColor',
-    'border',
-    'mimes', //'.jpg,.png',
-    'imageRounded',
-    'closeBtn',
-    'bgRounded',
-    'padding' //default 5px
-  ],
+  props: {
+    title: String, // Drop here
+    fontSize: String,
+    size: String,
+    background: String,
+    textColor: String,
+    border: String,
+    mimes: String, //'.jpg,.png',
+    imageRounded: String,
+    closeBtn: String,
+    bgRounded: String,
+    padding: String, //default 5px
+  },
 
   data() {
     return {
