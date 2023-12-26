@@ -1,6 +1,6 @@
 {
   "name": "vue3-picture-input",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "description": "This is an input for pictures",
   "homepage": "http://vue3pictureinput.sytes.net/",
   "repository": {
@@ -12,9 +12,12 @@
   "keywords": [
     "vue",
     "VueJS",
+    "Vue.js",
     "vue3",
     "img",
     "image",
+    "picture",
+    "photo",
     "input",
     "image-input",
     "vue-image-input",
