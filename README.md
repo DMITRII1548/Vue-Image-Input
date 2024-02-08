@@ -16,234 +16,7 @@ If you any idea for update.
 Please, click [here](http://vue3pictureinput.sytes.net/ideas/create) and fill in this form.
 
 ## What's new?
-1. Improved, optimized and minified component
-
-2. Deleted choicing colors with classes. Now, you can set colors in attrs
-
-### Before
-```html
-<template>
-  <VueImageInput size="size-40" mimes=".png,.jpg" ref="imageinput" border="border-navy"/>
-</template>
-
-<script>
-import { VueImageInput } from 'vue3-picture-input'
-import "vue3-picture-input/style.css"
-
-export default {
-  name: 'App',
-
-  methods: {
-    showFile() {
-      console.log(this.$refs.imageinput.file)
-    },
-  },
-
-  components: {
-    VueImageInput,
-  },
-}
-</script>
-
-<style scoped></style>
-```
-
-### After
-
-```html
-<template>
-  <VueImageInput size="size-40" mimes=".png,.jpg" ref="imageinput" borderColor="navy"/>
-</template>
-
-<script>
-import { VueImageInput } from 'vue3-picture-input'
-import "vue3-picture-input/style.css"
-
-export default {
-  name: 'App',
-
-  methods: {
-    showFile() {
-      console.log(this.$refs.imageinput.file)
-    },
-  },
-
-  components: {
-    VueImageInput,
-  },
-}
-</script>
-
-<style scoped></style>
-```
-
-3. Added new classes for border width: border-6, border-7, border-8, border-9, border-10.
-
-4. Added strong types for properties.
-
-5. Added new way for getting putted file.
-
-### Before
-
-```html
-<template>
-  <VueImageInput size="size-40" mimes=".png,.jpg" ref="imageinput" borderColor="navy"/>
-</template>
-
-<script>
-import { VueImageInput } from 'vue3-picture-input'
-import "vue3-picture-input/style.css"
-
-export default {
-  name: 'App',
-
-  methods: {
-    showFile() {
-      console.log(this.$refs.imageinput.file)
-    },
-  },
-
-  components: {
-    VueImageInput,
-  },
-}
-</script>
-
-<style scoped></style>
-```
-
-### After
-
-```html
-<template>
-  <VueImageInput
-    size="size-40"
-    mimes=".png,.jpg"
-    title="Drop file here"
-    v-model:file="file"/>
-  <button @click="showFile">Show</button>
-</template>
-
-<script>
-import { VueImageInput } from 'vue3-picture-input'
-import "vue3-picture-input/style.css"
-
-export default {
-  name: 'App',
-
-  data() {
-    return {
-      file: []
-    }
-  },
-
-  methods: {
-    showFile() {
-      console.log(this.file)
-    },
-  },
-
-  components: {
-    VueImageInput,
-  },
-}
-</script>
-
-<style scoped></style>
-```
-
-6. Deleted  classed for padding. Now you need write padding this way:
-
-```html
-<template>
-  <VueImageInput
-    size="size-40"
-    mimes=".png,.jpg"
-    title="Drop file here"
-    padding="5px"
-    paddingLeft="10px"
-    v-model:file="file"/>
-  <button @click="showFile">Show</button>
-</template>
-
-<script>
-import { VueImageInput } from 'vue3-picture-input'
-import "vue3-picture-input/style.css"
-
-export default {
-  name: 'App',
-
-  data() {
-    return {
-      file: []
-    }
-  },
-
-  methods: {
-    showFile() {
-      console.log(this.file)
-    },
-  },
-
-  components: {
-    VueImageInput,
-  },
-}
-</script>
-
-<style scoped></style>
-```
-7. Deleted rounded class. New way to round image or background:
-
-```html
-<template>
-  <VueImageInput
-    size="size-72"
-    mimes=".png,.jpg"
-    title="Drop file here"
-    imageRounded="10px"
-    bgRounded="15px"
-    v-model:file="file"/>
-  <button @click="showFile">Show</button>
-</template>
-
-<script>
-import { VueImageInput } from 'vue3-picture-input'
-import "vue3-picture-input/style.css"
-
-export default {
-  name: 'App',
-
-  data() {
-    return {
-      file: []
-    }
-  },
-
-  methods: {
-    showFile() {
-      console.log(this.file)
-    },
-  },
-
-  components: {
-    VueImageInput,
-  },
-}
-</script>
-
-<style scoped></style>
-```
-
-8. You must set font-size for title into pixels, percents and other ways in css
-
-Example usage:
-```html
-<VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
-  fontSize="16px"/>
-```
+1. Properties paddingY and paddingX were added
 
 ## Installation
 NPM:
@@ -255,7 +28,7 @@ YARN:
 ## Getting starting 
 
 ## Usage
-Import the package into your component. You will get your first program with this component.
+Import the package into your component. And you will get your first program with this component.
 ```html
 // src/App.vue
 <template>
@@ -379,23 +152,23 @@ Example usage:
 Border params: border-style, border-width, 
 ### params
 
-| param             | value                                                                          | 
-| ----------------- |:------------------------------------------------------------------------------:| 
-| border-none       | border: none                                                                   |
-| border            | border-width: 1px                                                              |
-| border-2          | border-width: 2px                                                              |
-| border-3          | border-width: 3px     we                                                         |
-| border-4          | border-width: 4px                                                              |
-| border-5          | border-width: 5px                                                              |
-| border-6          | border-width: 6px                                                              |
-| border-7          | border-width: 7px                                                              |
-| border-8          | border-width: 8px                                                              |
-| border-9          | border-width: 9px                                                              |
-| border-10         | border-width: 10px                                                             |
-| border-solid      | border-style: solid                                                            |
-| border-dashed     | border-style: dashed                                                           |
-| border-dotted     | border-style: dotted                                                           |
-| border-double     | border-style: double                                                           |
+| param             | value                                                     | 
+| ----------------- |:---------------------------------------------------------:| 
+| border-none       | border: none                                              |
+| border            | border-width: 1px                                         |
+| border-2          | border-width: 2px                                         |
+| border-3          | border-width: 3px                                         |
+| border-4          | border-width: 4px                                         |
+| border-5          | border-width: 5px                                         |
+| border-6          | border-width: 6px                                         |
+| border-7          | border-width: 7px                                         |
+| border-8          | border-width: 8px                                         |
+| border-9          | border-width: 9px                                         |
+| border-10         | border-width: 10px                                        |
+| border-solid      | border-style: solid                                       |
+| border-dashed     | border-style: dashed                                      |
+| border-dotted     | border-style: dotted                                      |
+| border-double     | border-style: double                                      |
 
 ### borderColor
 Border color
@@ -465,7 +238,7 @@ Accepted types of files
 
 
 ### title 
-This is text at your component 
+This is a text at your component 
 
 ### fontSize
 Font size of your title
@@ -488,6 +261,12 @@ Example usage:
   mimes=".png,.jpg"
   padding="16px"/>
 ```
+
+### paddingX
+Padding left and right of the container component
+
+### paddingY
+Padding top and bottom of the container component
 
 ### paddingLeft
 Padding left of the container component
