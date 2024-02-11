@@ -1,7 +1,7 @@
 <template>
   <div 
     :class="`${containerSize} container ${border}`" 
-    :style="`border-color: ${borderColor}; padding: ${padding}; padding-left: ${paddingLeft}; padding-right: ${paddingRight}; padding-top: ${paddingTop}; padding-bottom: ${paddingBottom}`"
+    :style="`border-color: ${borderColor}; padding: ${padding ?? (paddingY ?? '0') + ' ' + (paddingX ?? '0')}; padding-left: ${paddingLeft}; padding-right: ${paddingRight}; padding-top: ${paddingTop}; padding-bottom: ${paddingBottom}`"
     @drop="handleDrop" 
     @dragover.prevent>
     <template v-if="!imageSrc">
@@ -52,7 +52,9 @@ export default {
     paddingLeft: String,
     paddingRight: String,
     paddingTop: String,
-    paddingBottom: String
+    paddingBottom: String,
+    paddingX: String,
+    paddingY: String
   },
 
   data() {
