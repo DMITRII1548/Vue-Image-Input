@@ -5,15 +5,12 @@ This is a simple input for image
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_1.png)
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_2.png)
 
-## [WebSite](http://vue3pictureinput.sytes.net)
-
-## [Migrate docs from 2 to 3 version](http://vue3pictureinput.sytes.net/migrate/from_2_to_3_version)
-
-## [Docs for this version with examples](http://vue3pictureinput.sytes.net/versions/v3/5)
-
 ## We need your ideas for new updates
 If you any idea for update.
-Please, click [here](http://vue3pictureinput.sytes.net/ideas/create) and fill in this form.
+Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and create a new issue.
+
+## Support project
+If you like this project, please put a star on [GitHub] https://github.com/DMITRII1548/Vue-Image-Input
 
 ## What's new?
 1. Properties paddingY and paddingX were added
