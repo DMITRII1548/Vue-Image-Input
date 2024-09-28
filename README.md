@@ -7,7 +7,7 @@ This is a simple input for image
 
 ## We need your ideas for new updates
 If you any idea for update.
-Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and fill in this form.
+Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and create a new issue.
 
 ## Support project
 If you like this project, please put a strap on [GitHub] https://github.com/DMITRII1548/Vue-Image-Input
