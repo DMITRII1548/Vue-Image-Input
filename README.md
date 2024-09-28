@@ -5,15 +5,12 @@ This is a simple input for image
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_1.png)
 ![screen](https://github.com/DMITRII1548/Vue-Image-Input/blob/master/assets/Screenshot_2.png)
 
-## [WebSite](http://vue3pictureinput.sytes.net)
-
-## [Migrate docs from 2 to 3 version](http://vue3pictureinput.sytes.net/migrate/from_2_to_3_version)
-
-## [Docs for this version with examples](http://vue3pictureinput.sytes.net/versions/v3/5)
-
 ## We need your ideas for new updates
 If you any idea for update.
-Please, click [here](http://vue3pictureinput.sytes.net/ideas/create) and fill in this form.
+Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and create a new issue.
+
+## Support project
+If you like this project, please put a star on [GitHub] https://github.com/DMITRII1548/Vue-Image-Input
 
 ## What's new?
 1. Properties paddingY and paddingX were added
@@ -29,6 +26,8 @@ YARN:
 
 ## Usage
 Import the package into your component. And you will get your first program with this component.
+
+### Options API
 ```html
 // src/App.vue
 <template>
@@ -55,21 +54,43 @@ export default {
 <style scoped></style>
 ```
 
-In this code you have imported your component and have added his styles.
-
-### If you want to get your putted image as file use v-model:file:
-In this code implemented getting putted file functionality.
+### Composition API
 ```html
 <template>
   <VueImageInput
     size="size-72"
     mimes=".png,.jpg"
     title="Drop file here"/>
+  <button>Show</button>
+</template>
+
+<script setup>
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
+</script>
+
+<style scoped></style>
+```
+
+In this code you have imported your component and have added his styles.
+
+### If you want to get your putted image as file use v-model:file:
+In this code implemented getting putted file functionality.
+
+### Options API
+```html
+<template>
+  <VueImageInput
+    size="size-72"
+    mimes=".png,.jpg"
+    v-model:file="file"
+    title="Drop file here"/>
   <button @click="showFile">Show</button>
 </template>
 
 <script>
-import VueImageInput from './components/VueImageInput.vue'
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
 
 export default {
   name: 'App',
@@ -93,7 +114,33 @@ export default {
 </script>
 
 <style scoped></style>
+```
 
+### Composition API
+```html
+<template>
+  <VueImageInput
+    size="size-72"
+    mimes=".png,.jpg"
+    v-model:file="file"
+    title="Drop file here"/>
+  <button @click="showFile">Show</button>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
+
+const file = ref([])
+
+const showFile = () => {
+  console.log(file.value)
+}  
+</script>
+
+<style scoped></style>
 ```
 
 ## Properties
