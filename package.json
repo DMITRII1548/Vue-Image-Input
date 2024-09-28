@@ -5,7 +5,7 @@
   "homepage": "https://github.com/DMITRII1548/Vue-Image-Input/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DMITRII1548/Vue-Image-Input"
+    "url": "git+https://github.com/DMITRII1548/Vue-Image-Input.git"
   },
   "license": "MIT",
   "private": false,
