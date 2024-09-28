@@ -10,7 +10,7 @@ If you any idea for update.
 Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and create a new issue.
 
 ## Support project
-If you like this project, please put a strap on [GitHub] https://github.com/DMITRII1548/Vue-Image-Input
+If you like this project, please put a star on [GitHub] https://github.com/DMITRII1548/Vue-Image-Input
 
 ## What's new?
 1. Properties paddingY and paddingX were added
