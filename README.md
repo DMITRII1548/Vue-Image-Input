@@ -26,6 +26,8 @@ YARN:
 
 ## Usage
 Import the package into your component. And you will get your first program with this component.
+
+### Options API
 ```html
 // src/App.vue
 <template>
@@ -52,21 +54,43 @@ export default {
 <style scoped></style>
 ```
 
-In this code you have imported your component and have added his styles.
-
-### If you want to get your putted image as file use v-model:file:
-In this code implemented getting putted file functionality.
+### Composition API
 ```html
 <template>
   <VueImageInput
     size="size-72"
     mimes=".png,.jpg"
     title="Drop file here"/>
+  <button>Show</button>
+</template>
+
+<script setup>
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
+</script>
+
+<style scoped></style>
+```
+
+In this code you have imported your component and have added his styles.
+
+### If you want to get your putted image as file use v-model:file:
+In this code implemented getting putted file functionality.
+
+### Options API
+```html
+<template>
+  <VueImageInput
+    size="size-72"
+    mimes=".png,.jpg"
+    v-model:file="file"
+    title="Drop file here"/>
   <button @click="showFile">Show</button>
 </template>
 
 <script>
-import VueImageInput from './components/VueImageInput.vue'
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
 
 export default {
   name: 'App',
@@ -90,7 +114,33 @@ export default {
 </script>
 
 <style scoped></style>
+```
 
+### Composition API
+```html
+<template>
+  <VueImageInput
+    size="size-72"
+    mimes=".png,.jpg"
+    v-model:file="file"
+    title="Drop file here"/>
+  <button @click="showFile">Show</button>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+import { VueImageInput } from 'vue3-picture-input'
+import "vue3-picture-input/style.css"
+
+const file = ref([])
+
+const showFile = () => {
+  console.log(file.value)
+}  
+</script>
+
+<style scoped></style>
 ```
 
 ## Properties
