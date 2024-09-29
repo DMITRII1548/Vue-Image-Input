@@ -13,7 +13,9 @@ Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and 
 If you like this project, please put a star on [GitHub](https://github.com/DMITRII1548/Vue-Image-Input)
 
 ## What's new?
-1. Properties paddingY and paddingX were added
+1. Rewrited core of component to Composition API
+2. Added default value for title property as "Drop here"
+3. Added default value for mimes property as ".jpg,.png"
 
 ## Installation
 NPM:
@@ -33,7 +35,6 @@ Import the package into your component. And you will get your first program with
 <template>
   <VueImageInput
     size="size-72"
-    mimes=".png,.jpg"
     title="Drop file here"/>
   <button>Show</button>
 </template>
@@ -59,7 +60,6 @@ export default {
 <template>
   <VueImageInput
     size="size-72"
-    mimes=".png,.jpg"
     title="Drop file here"/>
   <button>Show</button>
 </template>
@@ -82,7 +82,6 @@ In this code implemented getting putted file functionality.
 <template>
   <VueImageInput
     size="size-72"
-    mimes=".png,.jpg"
     v-model:file="file"
     title="Drop file here"/>
   <button @click="showFile">Show</button>
@@ -121,7 +120,6 @@ export default {
 <template>
   <VueImageInput
     size="size-72"
-    mimes=".png,.jpg"
     v-model:file="file"
     title="Drop file here"/>
   <button @click="showFile">Show</button>
@@ -178,8 +176,7 @@ Background inside this component.
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   background="#7a7a7a"/>
 ```
 
@@ -189,8 +186,7 @@ Text color for title
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   textColor="#7a7a7a"
   title="Drop file here"/>
 ```
@@ -223,8 +219,7 @@ Border color
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   borderColor="#000"/>
 ```
 ### bgRounded
@@ -233,8 +228,7 @@ Round background of this component.
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   bgRounded="50%"/>
 ```
 
@@ -244,8 +238,7 @@ Thank this prop you can round an image
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   bgRounded="50%"/>
 ```
 
@@ -274,18 +267,23 @@ Color for close button
 
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   closeBtnColor="blue"/>
 ```
 ### mimes
-Accepted types of files
+Accepted types of files <br>
+// default ".jpg,.png"
 
-#### recomended '.png,.jpg'
-
+Example usage:
+```html
+<VueImageInput
+  size="size-72
+  mimes=".png,.jpg"/>
+```
 
 ### title 
-This is a text at your component 
+This is a text at your component <br>
+// default "Drop here"
 
 ### fontSize
 Font size of your title
@@ -293,8 +291,7 @@ Font size of your title
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   fontSize="16px"/>
 ```
 
@@ -304,8 +301,7 @@ Padding of the container component
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   padding="16px"/>
 ```
 
@@ -321,8 +317,7 @@ Padding left of the container component
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   paddingLeft="16px"/>
 ```
 
@@ -332,8 +327,7 @@ Padding right of the container component
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   paddingRight="16px"/>
 ```
 
@@ -344,8 +338,7 @@ Example usage:
 
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   paddingTop="16px"/>
 ```
 
@@ -355,8 +348,7 @@ Padding bottom of the container component
 Example usage:
 ```html
 <VueImageInput
-  size="size-72"
-  mimes=".png,.jpg"
+  size="size-72
   paddingBottom="16px"/>
 ```
 
