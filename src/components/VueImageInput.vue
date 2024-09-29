@@ -89,7 +89,7 @@ const props = defineProps({
   },
   padding: {
     type: String,
-    default: '5px'
+    default: ''
   },
   paddingLeft: {
     type: String,
