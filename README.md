@@ -13,7 +13,9 @@ Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and 
 If you like this project, please put a star on [GitHub](https://github.com/DMITRII1548/Vue-Image-Input)
 
 ## What's new?
-1. Properties paddingY and paddingX were added
+1. Rewrited core of component to Composition API
+2. Added default value for title property as "Drop here"
+3. Added default value for mimes property as ".jpg,.png"
 
 ## Installation
 NPM:
@@ -279,13 +281,15 @@ Color for close button
   closeBtnColor="blue"/>
 ```
 ### mimes
-Accepted types of files
+Accepted types of files <br>
+// default ".jpg,.png"
 
 #### recomended '.png,.jpg'
 
 
 ### title 
-This is a text at your component 
+This is a text at your component <br>
+// default "Drop here"
 
 ### fontSize
 Font size of your title
