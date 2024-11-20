@@ -11,6 +11,7 @@
         type="file" 
         @change="onChange" 
         :accept="mimes"
+        :required="required"
         ref="input">
       <button 
         @click.prevent="openInput" 
@@ -43,6 +44,10 @@ const props = defineProps({
     type: String,
     default: 'Drop here'
   }, 
+  required: {
+    type: Boolean,
+    default: false,
+  },
   fontSize: {
     type: String,
     default: ''
