@@ -287,7 +287,7 @@ Example usage:
 ```html
 <VueImageInput
   size="size-72
-  required="true"/>
+  :required="true"/>
 ```
 
 ### title 
