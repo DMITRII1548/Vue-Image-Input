@@ -13,9 +13,7 @@ Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and 
 If you like this project, please put a star on [GitHub](https://github.com/DMITRII1548/Vue-Image-Input)
 
 ## What's new?
-1. Rewrited core of component to Composition API
-2. Added default value for title property as "Drop here"
-3. Added default value for mimes property as ".jpg,.png"
+1. Added required property
 
 ## Installation
 NPM:
@@ -279,6 +277,17 @@ Example usage:
 <VueImageInput
   size="size-72
   mimes=".png,.jpg"/>
+```
+
+### required
+Is required field. Params true of false <br>
+// default false
+
+Example usage:
+```html
+<VueImageInput
+  size="size-72
+  :required="true"/>
 ```
 
 ### title 
