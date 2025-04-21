@@ -13,7 +13,7 @@ Please, click [here](https://github.com/DMITRII1548/Vue-Image-Input/issues) and 
 If you like this project, please put a star on [GitHub](https://github.com/DMITRII1548/Vue-Image-Input)
 
 ## What's new?
-1. Added required property
+1. Added imageSrc property
 
 ## Installation
 NPM:
@@ -280,7 +280,7 @@ Example usage:
 ```
 
 ### required
-Is required field. Params true of false <br>
+Is required field. Params true or false <br>
 // default false
 
 Example usage:
@@ -289,6 +289,18 @@ Example usage:
   size="size-72
   :required="true"/>
 ```
+
+### imageSrc
+Accept default imageSrc on preview. Params string <br>
+// default false
+
+Example usage:
+```html
+<VueImageInput
+  size="size-72
+  imageSrc="path/some.png"/>
+```
+
 
 ### title 
 This is a text at your component <br>
