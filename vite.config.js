@@ -26,4 +26,7 @@ export default defineConfig({
       },
     },
   },
+  define: {
+    __VUE_HMR_RUNTIME__: 'import.meta.hot ? __VUE_HMR_RUNTIME__ : undefined'
+  }
 });
